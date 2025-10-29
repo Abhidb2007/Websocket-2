@@ -8,5 +8,6 @@ wss.on("connection", (socket) => {
     console.log("user connected #" + userCount);
     socket.on("message", (message) => {
         console.log("message received" + message.toString());
+        socket.send(message.toString() + ":sent from the server");
     });
 });
