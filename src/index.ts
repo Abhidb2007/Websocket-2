@@ -13,4 +13,4 @@ wss.on("connection",(socket)=>{
             s.send(message.toString()+":sent from the server");
         }
     });
-});
+})
